@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha o seu Livro!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header img {
+      width: 100px;
+      height: 140px;
+    }
+
+    header h3 {
+      margin: 10px 0;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button.website {
+      background-color: #28a745;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://img.bertrand.pt/images/o-intruso-stephen-king/NTR8MjI3OTk5MzR8MTg2NzQxODF8MTU4MDExNTgyNzAwMA==/300x" alt="Capa do Livro">
+  <h3><a href="https://www.bertrandeditora.pt/produtos/ficha/o-intruso/22799934" target="_blank">O INTRUSO</a></h3>
+  
+  <div class="button-container">
+    <a href="quizointruso.html" class="button file">Quiz</a>
+    <a href="https://biblioteca.wook.pt/reader/index.html" class="button website" target="_blank">Ler Livro</a>
+  </div>
+</header>
+
+</body>
+</html>
+
