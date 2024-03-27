@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="black.css">
+    <title>QuizLand</title>
+    
+</head>
+<body>
+    <div id="quiz-landing">
+        <h1>Bem-vindo ao QuizLand</h1>
+        <p>Seu destino para quizzes divertidos e desafiadores!</p>
+            
+    </div>
+    
+    <div id="quiz-categorias">
+        
+            <h2>Categorias</h2>
+            <p>Escolha uma categoria e comece a testar os seus conhecimentos!</p>
+        
+    </div>
+    <menu></menu>
+    <ul class="menu">
+        <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0;--clr: #ff2972;">
+            <a href="HOME.html"><ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;--clr: #fee800;">
+            <a href="social.html"><ion-icon name="person-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;--clr: #fe00f1;">
+            <a href="relogio.html"><ion-icon name="time-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;--clr: #00b0fe;">
+            <a href="https://www.facebook.com/Bibliotecaserta/"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li style="--i:4;--clr: #a529ff;">
+            <a href="https://www.instagram.com/explore/locations/1119947694741328/biblioteca-municipal-padre-manuel-antunes/?img_index=1"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:5;--clr: #fea600;">
+            <a href="black.html"><ion-icon name="moon-outline"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:6;--clr: #01bdab;">
+            <a href="white.html"><ion-icon name="sunny-outline"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:7;--clr: #ff2972;">
+            <a href="backgrounds.html"><ion-icon name="images-outline"></ion-icon></a>
+        </li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let menuToggle = document.querySelector('.menuToggle');
+            let menu = document.querySelector('.menu');
+
+            menuToggle.onclick = function(){
+                menu.classList.toggle('active');
+            }
+
+            let menuItems = document.querySelectorAll('.menu li');
+        });
+    </script>
+    </menu>
+
+
+
+
+
+
+
+
+
+    <div class="destaques">
+        <h1>Livros em Destaque</h1>
+    </div>
+    
+
+        
+    <div class="book-list">
+        <div class="book">
+            
+            <h2>O intruso</h2>
+            <img src="https://img.wook.pt/images/o-intruso-stephen-king/MXwyMjc5OTkzNHwxODY3NDE4MXwxNTgwMTE1ODI3MDAwfHdlYnA=/550x" alt="O intruso">
+            
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.wook.pt/livro/o-intruso-stephen-king/22799934'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+        </div>
+
+        
+        <div class="book">
+            
+            <h2>O Traficante</h2>
+            <img src="https://img.bertrand.pt/images/o-traficante-robert-muchamore/NDV8MTkwMTg2fDIxOTIzNTU1fDE2NDA4NTYwNTAwMDB8d2VicA==/300x" alt="">
+            
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.wook.pt/livro/o-traficante-robert-muchamore/190186'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+        </div>
+        <div class="book">
+            
+            <h2>Minecraft - Mundo Aberto</h2>
+            <img src="https://img.bertrand.pt/images/minecraft-mundo-aberto-stephanie-ramirez/NDV8Mjk1OTg0NjF8MjYwMjU4NTV8MTcwNDg3NDY3NDAwMHx3ZWJw/300x" alt="">
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.bertrand.pt/livro/minecraft-mundo-aberto-stephanie-ramirez/29598461'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+            
+        </div>
+        
+        <div class="book">
+            
+            <h2>Mein Kampf</h2>
+            <img src="https://img.bertrand.pt/images/mein-kampf-adolf-hitler/NDV8MTcwMzc3Mjd8MTI2NjExODR8MTQ0Nzg2OTUzMzAwMHx3ZWJw/300x" alt="">
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.bertrand.pt/livro/mein-kampf-adolf-hitler/17037727'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+            
+        </div>
+        
+        <div class="book">
+            
+            <h2>O Que Faz o ChatGPT e Como Funciona</h2>
+            <img src="https://img.bertrand.pt/images/o-que-faz-o-chatgpt-e-como-funciona-stephen-wolfram/NDV8MjkyMTAxODF8MjU1OTY1MjV8MTY5MDg4MjQyNjAwMHx3ZWJw/300x" alt="">
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.bertrand.pt/livro/o-que-faz-o-chatgpt-e-como-funciona-stephen-wolfram/29210181'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+            
+        </div>
+
+        <div class="book">
+            
+            <h2>Manifesto do Partido Comunista</h2>
+            <img src="https://img.bertrand.pt/images/manifesto-do-partido-comunista-karl-marx/NDV8MjQ3MTkwOTd8MjA4NzU0MzZ8MTYxODMzMDg4NTAwMHx3ZWJw/300x" alt="">
+            <div class="input-wrapper">
+                
+                <b class="neon-button" onclick="window.location.href='https://www.bertrand.pt/livro/manifesto-do-partido-comunista-karl-marx/24719097'">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    Ler Livro
+                </b>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    
+
+
+
+
+
+
+
+    
+       
+    <div class="container">
+        <div class="image-wrapper">
+        <img src="fotos/arte.png" alt="">
+        <div class="overlay">
+            <a href="artepasta/arte.html" class="button">Arte</a>
+        </div>
+    </div>
+    
+        <div class="image-wrapper">
+        <img src="fotos/aventura.png" alt="">
+        <div class="overlay">
+            <a href="aventurapasta/aventura.html" class="button">Aventura</a>
+        </div>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="fotos/bd.jpg" alt="">
+            <div class="overlay">
+                <a href="bdpasta/bd.html" class="button">BD</a>
+            </div>
+            </div>
+
+        <div class="image-wrapper">
+            <img src="fotos/ciencias.png" alt="">
+            <div class="overlay">
+                <a href="cienciaspasta/ciencias.html" class="button">Ciencias</a>
+        </div>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="fotos/cultura.png" alt="">
+            <div class="overlay">
+                <a href="culturapasta/cultura.html" class="button">Cultura</a>
+        </div>
+        </div>        
+        
+        <div class="image-wrapper">
+            <img src="fotos/desenvolvimento pessoal.png" alt="">
+            <div class="overlay">
+                <a href="desenvolvimentopasta/desenvolvimentol.html" class="button">Desenvolvimento Pessoal</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/desporto.png" alt="">
+            <div class="overlay">
+                <a href="desportopasta/desporto.html" class="button">Desporto</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/engenharia.png" alt="">
+            <div class="overlay">
+                <a href="engenhariapasta/engenharia.html" class="button">Engenharia</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/fantasia.png" alt="">
+            <div class="overlay">
+                <a href="fantasiapasta/fantasia.html" class="button">Fantasia</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/gastronomia.png" alt="">
+            <div class="overlay">
+                <a href="gastronomiapasta/gastronomia.html" class="button">Gastronomia</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/gestao.png" alt="">
+            <div class="overlay">
+                <a href="gestaopasta/gestao.html" class="button">Gestão</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/historia.png" alt="">
+            <div class="overlay">
+                <a href="historiapasta/historia.html" class="button">História</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/informatica.png" alt="">
+            <div class="overlay">
+                <a href="informaticapasta/informatica.html" class="button">Informática</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/medicina.png" alt="">
+            <div class="overlay">
+                <a href="medicinapasta/medicina.html" class="button">Medicina</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/politica.png" alt="">
+            <div class="overlay">
+                <a href="politicapasta/politica.html" class="button">Política</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/religiao.png" alt="">
+            <div class="overlay">
+                <a href="religiaopasta/religiao.html" class="button">Religião</a>
+        </div>
+        </div> 
+
+        <div class="image-wrapper">
+            <img src="fotos/romance.png" alt="">
+            <div class="overlay">
+                <a href="romancepasta/romance.html" class="button">Romance</a>
+        </div>
+        </div> 
+
+
+        
+
+
+    
+</body>
+</html>
+

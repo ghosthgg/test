@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background</title>
+  <link rel="stylesheet" href="backgrounds.css">
+  
+</head>
+
+
+<body>
+    
+<div class="container">
+    
+    <menu>
+        <ul class="menu">
+            <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i:0;--clr: #ff2972;">
+                <a href="HOME.html"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr: #fee800;">
+                <a href="social.html"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr: #fe00f1;">
+                <a href="relogio.html"><ion-icon name="time-outline"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr: #00b0fe;">
+                <a href="https://www.facebook.com/Bibliotecaserta/"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr: #a529ff;">
+                <a href="https://www.instagram.com/explore/locations/1119947694741328/biblioteca-municipal-padre-manuel-antunes/?img_index=1"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr: #fea600;">
+                <a href="black.html"><ion-icon name="moon-outline"></ion-icon></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr: #01bdab;">
+                <a href="white.html"><ion-icon name="sunny-outline"></ion-icon></ion-icon></a>
+            </li>
+            <li style="--i:7;--clr: #ff2972;">
+                <a href="backgrounds.html"><ion-icon name="images-outline"></ion-icon></a>
+            </li>
+        </ul>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let menuToggle = document.querySelector('.menuToggle');
+                let menu = document.querySelector('.menu');
+    
+                menuToggle.onclick = function(){
+                    menu.classList.toggle('active');
+                }
+    
+                let menuItems = document.querySelectorAll('.menu li');
+            });
+        </script>
+    </menu>
+
+    <div class="input-wrapper">
+        <input type="text" id="imageUrl" placeholder="Insira o URL da imagem" class="custom-input">
+        <b href="#" onclick="changeBackgroundByUrl()" class="neon-button">
+            <span></span><span></span>
+            <span></span><span></span>
+            Fundo Personalizado
+        </b>
+    </div>
+    
+    <div class="image-container">    
+
+    <div class="image-wrapper" onclick="changeBackground('https://i.pinimg.com/originals/f5/60/56/f56056df50d1c0e9f3523135240c5922.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://i.pinimg.com/originals/f5/60/56/f56056df50d1c0e9f3523135240c5922.png" alt="Custom Background">
+        
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('https://wallpapercave.com/wp/wp10955025.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://wallpapercave.com/wp/wp10955025.png" alt="Custom Background">
+       
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fa223523-406d-48ef-bff6-d045d1b9544b/d7afvrv-0807685d-0da0-43cf-b564-2814ec1b0b73.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhMjIzNTIzLTQwNmQtNDhlZi1iZmY2LWQwNDVkMWI5NTQ0YlwvZDdhZnZydi0wODA3Njg1ZC0wZGEwLTQzY2YtYjU2NC0yODE0ZWMxYjBiNzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tgk1LMFfpKRaZmAqqMhbS12enY_U_7Bbe6jG4TXfEpw')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fa223523-406d-48ef-bff6-d045d1b9544b/d7afvrv-0807685d-0da0-43cf-b564-2814ec1b0b73.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhMjIzNTIzLTQwNmQtNDhlZi1iZmY2LWQwNDVkMWI5NTQ0YlwvZDdhZnZydi0wODA3Njg1ZC0wZGEwLTQzY2YtYjU2NC0yODE0ZWMxYjBiNzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tgk1LMFfpKRaZmAqqMhbS12enY_U_7Bbe6jG4TXfEpw" alt="Custom Background">
+        
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('https://wallpaper.dog/large/20505273.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://wallpaper.dog/large/20505273.png" alt="Custom Background">
+        
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('https://wallpapercave.com/wp/wp1914719.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://wallpapercave.com/wp/wp1914719.jpg" alt="Custom Background">
+       
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/goku.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/goku.jpg" alt="Custom Background">
+       
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte1.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte1.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte2.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte2.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte3.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte3.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte4.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte4.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte5.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte5.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte6.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte6.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/monte7.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/monte7.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/arvore.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/arvore.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/tempo.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/tempo.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/lua.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/lua.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/sol.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/sol.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/ceu.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/ceu.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/praia.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/praia.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/estrelas.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/estrelas.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada1.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada1.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada2.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada2.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada3.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada3.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada4.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada4.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/nada5.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/nada5.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/gelo.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/gelo.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/oceano.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/oceano.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/elon.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/elon.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/hitler.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/hitler.jpg" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('fotos/kaguya.png')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="fotos/kaguya.png" alt="Custom Background">
+    </div>
+
+    <div class="image-wrapper" onclick="changeBackground('https://wallpaperaccess.com/full/2637581.jpg')">
+        <!-- Insira sua imagem personalizada aqui -->
+        <img src="https://wallpaperaccess.com/full/2637581.jpg" alt="Custom Background">
+    </div>
+
+    </div>
+    
+
+</div>
+
+<script src="backgrounds.js"></script>
+</body>
+</html>
