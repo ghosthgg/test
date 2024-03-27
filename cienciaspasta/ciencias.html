@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ciencias.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/leoes-de-portugal-carlos-pinto-de-abreu/NDV8Mjk1NzkxMDh8MjYwMDM4OTl8MTcwMzYwMTg5NzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/leoes-de-portugal-carlos-pinto-de-abreu/NDV8Mjk1NzkxMDh8MjYwMDM4OTl8MTcwMzYwMTg5NzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/leoes-de-portugal-carlos-pinto-de-abreu/29579108" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/manual-de-agricultura-biologica-antonio-lopes/NDV8MjY2MTQyNTR8MjI4OTAwNDF8MTY1MTU4NTY3NDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/manual-de-agricultura-biologica-antonio-lopes/NDV8MjY2MTQyNTR8MjI4OTAwNDF8MTY1MTU4NTY3NDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/manual-de-agricultura-biologica-antonio-lopes/26614254" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+   <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-universo-do-big-bang-aos-buracos-negros-paulo-crawford/NDV8MjY5ODk5ODB8MjMyODY5ODJ8MTY1MTUwNTg1MDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-universo-do-big-bang-aos-buracos-negros-paulo-crawford/NDV8MjY5ODk5ODB8MjMyODY5ODJ8MTY1MTUwNTg1MDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-universo-do-big-bang-aos-buracos-negros-paulo-crawford/26989980" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+   <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/analise-estatistica-com-o-spss-statistics-joao-maroco/NDV8MjQ2OTkxNTR8MjA4NDk4MTd8MTYxODMwNzc3OTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/analise-estatistica-com-o-spss-statistics-joao-maroco/NDV8MjQ2OTkxNTR8MjA4NDk4MTd8MTYxODMwNzc3OTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/analise-estatistica-com-o-spss-statistics-joao-maroco/24699154" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/aves-de-portugal-continental-goncalo-elias/NDV8MjY5OTMwNTN8MjMyOTA3NDd8MTY1MTY1MzIxMDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/aves-de-portugal-continental-goncalo-elias/NDV8MjY5OTMwNTN8MjMyOTA3NDd8MTY1MTY1MzIxMDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/aves-de-portugal-continental-goncalo-elias/26993053" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/intoxicacao-digital-augusto-cury/NDV8Mjk0NzQyNTN8MjU4ODQ0OTd8MTcwNzk5NTQ0OTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/intoxicacao-digital-augusto-cury/NDV8Mjk0NzQyNTN8MjU4ODQ0OTd8MTcwNzk5NTQ0OTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/intoxicacao-digital-augusto-cury/29474253" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+</header>
+  
+  
+<script src="ciencias.js"></script>
+
+</body>
+</html>

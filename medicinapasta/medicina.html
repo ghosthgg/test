@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="medicina.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/historia-curiosa-da-medicina-pedro-gargantilla/NDV8MjM0MTMwNzB8MTkzNzU2MTZ8MTU2OTk1MDI1MDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/historia-curiosa-da-medicina-pedro-gargantilla/NDV8MjM0MTMwNzB8MTkzNzU2MTZ8MTU2OTk1MDI1MDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/historia-curiosa-da-medicina-pedro-gargantilla/23413070" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/diagnostico-da-infecao-vih-sida-isabel-dias/NDV8MTQzMDQwODB8OTgyNDM4NHwxMzgzNTg1OTAyMDAwfHdlYnA=/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/diagnostico-da-infecao-vih-sida-isabel-dias/NDV8MTQzMDQwODB8OTgyNDM4NHwxMzgzNTg1OTAyMDAwfHdlYnA=/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/diagnostico-da-infecao-vih-sida-isabel-dias/14304080" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/ser-jovem-em-todas-as-idades-nadia-volf/NDV8MjA4MTA0MXwxODMzNzcxfDEzODM1NzY1NjMwMDB8d2VicA==/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/ser-jovem-em-todas-as-idades-nadia-volf/NDV8MjA4MTA0MXwxODMzNzcxfDEzODM1NzY1NjMwMDB8d2VicA==/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/ser-jovem-em-todas-as-idades-nadia-volf/2081041" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/cbd-guia-do-utilizador-para-a-canabis-medicinal-leonard-leinow/NDV8MjM5MjE5NzF8MTk5NDkwOTV8MTU4NTE1MjczODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/cbd-guia-do-utilizador-para-a-canabis-medicinal-leonard-leinow/NDV8MjM5MjE5NzF8MTk5NDkwOTV8MTU4NTE1MjczODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/cbd-guia-do-utilizador-para-a-canabis-medicinal-leonard-leinow/23921971" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-farmacia-em-casa-petra-wenzel/NDV8MzI0OTU4N3wyNTQ0MjEwfDEzODM1ODAwMjMwMDB8d2VicA==/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-farmacia-em-casa-petra-wenzel/NDV8MzI0OTU4N3wyNTQ0MjEwfDEzODM1ODAwMjMwMDB8d2VicA==/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-farmacia-em-casa-petra-wenzel/3249587" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+ 
+
+</header>
+  
+<script src="medicina.js"></script>
+
+
+</body>
+</html>

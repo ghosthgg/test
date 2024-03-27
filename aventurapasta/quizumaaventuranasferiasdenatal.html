@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Uma aventura no Porto</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+        <h2 class="question q1">1. Quem são os personagens principais do livro "Uma Aventura nas Férias de Natal"?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q1" value="Pedro e João">Pedro e João</li>
+            <li class="option"><input type="radio" name="q1" value="Ana e Teresa">Ana e Teresa</li>
+            <li class="option"><input type="radio" name="q1" value="Miguel e Tiago">Miguel e Tiago</li>
+            <li class="option"><input type="radio" name="q1" value="Sofia e Carla">Sofia e Carla</li>
+        </ul>
+    
+        <h2 class="question q2">2. Qual é o cenário principal onde se passa a história?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q2" value="Uma cidade pequena">Uma cidade pequena</li>
+            <li class="option"><input type="radio" name="q2" value="Uma estação de esqui">Uma estação de esqui</li>
+            <li class="option"><input type="radio" name="q2" value="Uma ilha deserta">Uma ilha deserta</li>
+            <li class="option"><input type="radio" name="q2" value="Uma floresta encantada">Uma floresta encantada</li>
+        </ul>
+    
+        <h2 class="question q3">3. Quem é o autor do livro "Uma Aventura nas Férias de Natal"?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q3" value="Luísa Ducla Soares">Luísa Ducla Soares</li>
+            <li class="option"><input type="radio" name="q3" value="Ana Maria Magalhães e Isabel Alçada">Ana Maria Magalhães e Isabel Alçada</li>
+            <li class="option"><input type="radio" name="q3" value="Sophia de Mello Breyner Andresen">Sophia de Mello Breyner Andresen</li>
+            <li class="option"><input type="radio" name="q3" value="Alice Vieira">Alice Vieira</li>
+        </ul>
+    
+        <h2 class="question q4">4. Qual é o problema principal enfrentado pelos personagens?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q4" value="Encontrar um presente perdido">Encontrar um presente perdido</li>
+            <li class="option"><input type="radio" name="q4" value="Ajudar o Papai Noel a entregar presentes">Ajudar o Papai Noel a entregar presentes</li>
+            <li class="option"><input type="radio" name="q4" value="Descobrir quem roubou os presentes de Natal">Descobrir quem roubou os presentes de Natal</li>
+            <li class="option"><input type="radio" name="q4" value="Provar que o espírito de Natal existe">Provar que o espírito de Natal existe</li>
+        </ul>
+    
+        <h2 class="question q5">5. Qual é a lição principal ensinada pelo livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q5" value="A importância da família">A importância da família</li>
+            <li class="option"><input type="radio" name="q5" value="A generosidade e o espírito de doação">A generosidade e o espírito de doação</li>
+            <li class="option"><input type="radio" name="q5" value="A magia do Natal">A magia do Natal</li>
+            <li class="option"><input type="radio" name="q5" value="A necessidade de perdoar">A necessidade de perdoar</li>
+        </ul>
+    
+        <h2 class="question q6">6. Qual é o tema predominante durante as férias de Natal?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q6" value="Neve e esportes de inverno">Neve e esportes de inverno</li>
+            <li class="option"><input type="radio" name="q6" value="Amizade e diversão">Amizade e diversão</li>
+            <li class="option"><input type="radio" name="q6" value="Presentes e troca de presentes">Presentes e troca de presentes</li>
+            <li class="option"><input type="radio" name="q6" value="Solidão e reflexão">Solidão e reflexão</li>
+        </ul>
+    
+        <h2 class="question q7">7. Qual é a idade recomendada para leitura deste livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q7" value="6-8 anos">6-8 anos</li>
+            <li class="option"><input type="radio" name="q7" value="9-12 anos">9-12 anos</li>
+            <li class="option"><input type="radio" name="q7" value="13-15 anos">13-15 anos</li>
+            <li class="option"><input type="radio" name="q7" value="16-18 anos">16-18 anos</li>
+        </ul>
+    
+        <h2 class="question q8">8. Qual é a mensagem de esperança transmitida pelo livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q8" value="Mesmo nos momentos difíceis, o espírito de Natal pode trazer alegria">Mesmo nos momentos difíceis, o espírito de Natal pode trazer alegria</li>
+            <li class="option"><input type="radio" name="q8" value="O amor e a bondade prevalecem sobre o egoísmo e a ganância">O amor e a bondade prevalecem sobre o egoísmo e a ganância</li>
+            <li class="option"><input type="radio" name="q8" value="Nunca é tarde para fazer as pazes e compartilhar o espírito de Natal">Nunca é tarde para fazer as pazes e compartilhar o espírito de Natal</li>
+            <li class="option"><input type="radio" name="q8" value="A magia do Natal está presente em todos os corações generosos">A magia do Natal está presente em todos os corações generosos</li>
+        </ul>
+    
+        <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+    </div>
+    
+      
+
+
+    <script>
+        // Função para verificar as respostas e redirecionar para outra página
+        function checkAnswers() {
+            var correctCount = 0;
+            var incorrectCount = 0;
+    
+            // Verifica a resposta para a pergunta 1
+            var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+            if (respostaQ1 && respostaQ1.value === 'Pedro e João') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 2
+            var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+            if (respostaQ2 && respostaQ2.value === 'Uma cidade pequena') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 3
+            var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+            if (respostaQ3 && respostaQ3.value === 'Luísa Ducla Soares') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 4
+            var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+            if (respostaQ4 && respostaQ4.value === 'Descobrir quem roubou os presentes de Natal') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 5
+            var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+            if (respostaQ5 && respostaQ5.value === 'A magia do Natal') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 6
+            var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+            if (respostaQ6 && respostaQ6.value === 'Neve e esportes de inverno') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 7
+            var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+            if (respostaQ7 && respostaQ7.value === '9-12 anos') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 8
+            var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+            if (respostaQ8 && respostaQ8.value === 'Mesmo nos momentos difíceis, o espírito de Natal pode trazer alegria') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+            window.location.href = `resultadoUmaaventuranasferiasdenatal.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+        }
+    </script>
+    
+    
+</body>
+</html>

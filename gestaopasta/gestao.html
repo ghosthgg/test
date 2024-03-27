@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gestao.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/como-sair-do-sufoco-financeiro-carina-meireles/NDV8Mjk1NjMzMzR8MjU5ODY5ODl8MTcwMzA5MDY0NTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/como-sair-do-sufoco-financeiro-carina-meireles/NDV8Mjk1NjMzMzR8MjU5ODY5ODl8MTcwMzA5MDY0NTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/como-sair-do-sufoco-financeiro-carina-meireles/29563334" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/principios-para-investir-com-sucesso-burton-g-malkiel/NDV8MjY4NzcxNDl8MjMxNzEwMzF8MTY1MTU4NjMyOTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/principios-para-investir-com-sucesso-burton-g-malkiel/NDV8MjY4NzcxNDl8MjMxNzEwMzF8MTY1MTU4NjMyOTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/principios-para-investir-com-sucesso-burton-g-malkiel/26877149" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/marketing-digital-na-pratica-paulo-faustino/NDV8MjI4NDIwMTN8MTg3MjEyMTl8MTU2MTYwOTUzNjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/marketing-digital-na-pratica-paulo-faustino/NDV8MjI4NDIwMTN8MTg3MjEyMTl8MTU2MTYwOTUzNjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/marketing-digital-na-pratica-paulo-faustino/22842013" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-publicidade-no-estado-novo-rui-estrela/NDV8MTU2NzY5MjN8MTExNzEzMjl8MTM5NjQ1NTAzNjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-publicidade-no-estado-novo-rui-estrela/NDV8MTU2NzY5MjN8MTExNzEzMjl8MTM5NjQ1NTAzNjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-publicidade-no-estado-novo-rui-estrela/15676923" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/escola-de-financas-pessoais-andreia-melo/NDV8Mjk0MzQ4MzZ8MjU4NDAzMjN8MTcwMzE1NjU4MDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/escola-de-financas-pessoais-andreia-melo/NDV8Mjk0MzQ4MzZ8MjU4NDAzMjN8MTcwMzE1NjU4MDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/escola-de-financas-pessoais-andreia-melo/29434836" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+</header>
+  
+<script src="gestao.js"></script>
+
+
+</body>
+</html>

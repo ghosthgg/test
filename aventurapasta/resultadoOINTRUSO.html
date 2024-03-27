@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados do Quiz</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    #result-container {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    #answers-container {
+      display: none;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    #answers-container p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="result-container">
+  <!-- Conteúdo dos resultados -->
+  <h2>Resultados do Quiz</h2>
+  <p>Respostas corretas: <span id="correct-count">0</span></p>
+  <p>Respostas incorretas: <span id="incorrect-count">0</span></p>
+
+  <!-- Botões de navegação -->
+  <a href="HOME.html" class="button">Voltar para o Inicio</a>
+  <a href="aventura.html" class="button">Voltar para os quizzes</a>
+  <button class="button" onclick="verRespostasDadas()">Ver Respostas Dadas</button>
+
+  <!-- Container para exibir respostas dadas -->
+  <div id="answers-container"></div>
+</div>
+
+<script>
+  // Objeto para armazenar as respostas dadas pelo usuário
+  var respostasDadas = {};
+
+  // Funções para navegação
+  function voltarParaHome() {
+    window.location.href = "Nova pasta (3)/HOME.html";
+  }
+
+  function verRespostasDadas() {
+    var answersContainer = document.getElementById('answers-container');
+    answersContainer.innerHTML = ''; // Limpa o conteúdo anterior
+
+    // Verifica se há respostas dadas
+    if (Object.keys(respostasDadas).length === 0) {
+      answersContainer.innerHTML = '<p>Nenhuma resposta foi dada.</p>';
+    } else {
+      // Exibe as respostas dadas
+      for (var questionNumber in respostasDadas) {
+        var answer = respostasDadas[questionNumber];
+        var answerElement = document.createElement('p');
+        answerElement.textContent = 'Pergunta ' + questionNumber + ': Resposta: ' + answer;
+        answersContainer.appendChild(answerElement);
+      }
+    }
+
+    // Exibe o container de respostas
+    answersContainer.style.display = 'block';
+  }
+
+  // Função para armazenar a resposta dada pelo usuário
+  function armazenarResposta(questionNumber, answer) {
+    respostasDadas[questionNumber] = answer;
+  }
+
+  // Função para exibir o número de respostas corretas e incorretas
+  function exibirResultados(correctCount, incorrectCount) {
+    document.getElementById('correct-count').innerText = correctCount;
+    document.getElementById('incorrect-count').innerText = incorrectCount;
+  }
+
+  // Função para obter parâmetros da URL
+  function obterParametroUrl(nomeParametro) {
+    var url = new URL(window.location.href);
+    return url.searchParams.get(nomeParametro);
+  }
+
+  // Função para verificar parâmetros da URL e exibir os resultados
+  function verificarParametrosUrl() {
+    var correctCount = parseInt(obterParametroUrl("correct")) || 0;
+    var incorrectCount = parseInt(obterParametroUrl("incorrect")) || 0;
+    exibirResultados(correctCount, incorrectCount);
+  }
+
+  // Verificar parâmetros da URL ao carregar a página
+  window.onload = function() {
+    verificarParametrosUrl();
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="historia.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+   body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/mulheres-na-guerra-helena-ferro-de-gouveia/NDV8Mjg1MjM1MTJ8MjQ5MDAxMTR8MTY4MjU5MjM4MjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/mulheres-na-guerra-helena-ferro-de-gouveia/NDV8Mjg1MjM1MTJ8MjQ5MDAxMTR8MTY4MjU5MjM4MjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/mulheres-na-guerra-helena-ferro-de-gouveia/28523512" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-cortina-de-ferro-anne-applebaum/NDV8Mjc2MTk4NTR8MjM5OTQxNjJ8MTY3NTA5MDkxMjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-cortina-de-ferro-anne-applebaum/NDV8Mjc2MTk4NTR8MjM5OTQxNjJ8MTY3NTA5MDkxMjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-cortina-de-ferro-anne-applebaum/27619854" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/mein-kampf-adolf-hitler/NDV8MTcwMzc3Mjd8MTI2NjExODR8MTQ0Nzg2OTUzMzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/mein-kampf-adolf-hitler/NDV8MTcwMzc3Mjd8MTI2NjExODR8MTQ0Nzg2OTUzMzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/mein-kampf-adolf-hitler/17037727" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-diario-de-anne-frank-anne-frank/NDV8MTUzMjgzNDJ8MjQyMDkzODF8MTY3MDU5OTEzMjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-diario-de-anne-frank-anne-frank/NDV8MTUzMjgzNDJ8MjQyMDkzODF8MTY3MDU5OTEzMjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-diario-de-anne-frank-anne-frank/15328342" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/eu-marat-ex-comandante-do-grupo-wagner-marat-gabidullin/NDV8Mjg2MDkzNzR8MjQ5OTE4NjR8MTY4NDg0MzkzMjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/eu-marat-ex-comandante-do-grupo-wagner-marat-gabidullin/NDV8Mjg2MDkzNzR8MjQ5OTE4NjR8MTY4NDg0MzkzMjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/ebook/eu-marat-ex-comandante-do-grupo-wagner-marat-gabidullin/28609374" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://static.fnac-static.com/multimedia/Images/FR/MC/7f/de/ab/11263615/1540-1/tsp20180925104607/ROTA-66-A-HISTORIA-DA-POLICIA-QUE-MATA.jpg" class="cover-image" />
+      </div>
+      <img src="https://static.fnac-static.com/multimedia/Images/FR/MC/7f/de/ab/11263615/1540-1/tsp20180925104607/ROTA-66-A-HISTORIA-DA-POLICIA-QUE-MATA.jpg" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/rota-66-caco-barcellos/14656822" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  
+</header>
+  
+  
+<script src="historia.js"></script>
+
+</body>
+</html>

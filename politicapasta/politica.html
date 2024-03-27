@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="politica.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/porque-falham-as-nacoes-daron-acemoglu/NDV8MjU1NTY2NTl8MjE4MDYzNzh8MTYzNzU5ODQ5OTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/porque-falham-as-nacoes-daron-acemoglu/NDV8MjU1NTY2NTl8MjE4MDYzNzh8MTYzNzU5ODQ5OTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/ebook/porque-falham-as-nacoes-daron-acemoglu/25556659" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/fascismos-felipe-azevedo-cazetta/NDV8Mjc4NjUxODR8MjQyNDkwMDJ8MTY2ODEyMDcyODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/fascismos-felipe-azevedo-cazetta/NDV8Mjc4NjUxODR8MjQyNDkwMDJ8MTY2ODEyMDcyODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/ebook/fascismos-felipe-azevedo-cazetta/27865184" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/socialismo-fascista-pierre-drieu-la-rochelle-pierre-drieu-la-rochelle/NDV8Mjg1MTg3NzR8MjQ4OTUwMDl8MTY4MjQ2MjMwNjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/socialismo-fascista-pierre-drieu-la-rochelle-pierre-drieu-la-rochelle/NDV8Mjg1MTg3NzR8MjQ4OTUwMDl8MTY4MjQ2MjMwNjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/ebook/socialismo-fascista-pierre-drieu-la-rochelle-pierre-drieu-la-rochelle/28518774" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/manifesto-do-partido-comunista-karl-marx/NDV8MjQ3MTkwOTd8MjA4NzU0MzZ8MTYxODMzMDg4NTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/manifesto-do-partido-comunista-karl-marx/NDV8MjQ3MTkwOTd8MjA4NzU0MzZ8MTYxODMzMDg4NTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/manifesto-do-partido-comunista-karl-marx/24719097" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-guerra-no-meio-de-nos-general-loureiro-dos-santos/NDV8MTczMzM5NzB8MTI5NjA3NzN8MTQ1MTQ4NTk3NjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-guerra-no-meio-de-nos-general-loureiro-dos-santos/NDV8MTczMzM5NzB8MTI5NjA3NzN8MTQ1MTQ4NTk3NjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-guerra-no-meio-de-nos-general-loureiro-dos-santos/17333970" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+
+</header>
+  
+  
+<script src="politica.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desenvolvimento.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+   body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/pai-rico-pai-pobre-robert-t-kiyosaki/NDV8MjkzNTk4ODB8MjU3NTc5MDV8MTcwODMzMTk2ODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/pai-rico-pai-pobre-robert-t-kiyosaki/NDV8MjkzNTk4ODB8MjU3NTc5MDV8MTcwODMzMTk2ODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/pai-rico-pai-pobre-robert-t-kiyosaki/29359880" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/habitos-atomicos-james-clear/NDV8MjMxMzI1MTR8MTkwNDkyMzB8MTU1OTIxMzkzMzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/habitos-atomicos-james-clear/NDV8MjMxMzI1MTR8MTkwNDkyMzB8MTU1OTIxMzkzMzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/habitos-atomicos-james-clear/23132514" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/torne-se-um-decifrador-de-pessoas-alexandre-monteiro/NDV8MjQ5OTU0MjZ8MjExODA1ODN8MTY3NDU3NjQyODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/torne-se-um-decifrador-de-pessoas-alexandre-monteiro/NDV8MjQ5OTU0MjZ8MjExODA1ODN8MTY3NDU3NjQyODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/torne-se-um-decifrador-de-pessoas-alexandre-monteiro/24995426" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-sabedoria-dos-idiotas-nasrudin-hodja/NDV8MjMyNzY0MzJ8MTkyMTY2NTJ8MTU2NTM2MDc3NjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-sabedoria-dos-idiotas-nasrudin-hodja/NDV8MjMyNzY0MzJ8MTkyMTY2NTJ8MTU2NTM2MDc3NjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-sabedoria-dos-idiotas-nasrudin-hodja/23276432" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/tu-es-aquilo-que-pensas-james-allen/NDV8MjMzMTcwNTd8MjYwMTg1NTN8MTcwODY5OTIyOTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/tu-es-aquilo-que-pensas-james-allen/NDV8MjMzMTcwNTd8MjYwMTg1NTN8MTcwODY5OTIyOTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/tu-es-aquilo-que-pensas-james-allen/23317057" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+ 
+
+</header>
+  
+  
+<script src="desenvolvimento.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aventura.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.wook.pt/images/o-intruso-stephen-king/MXwyMjc5OTkzNHwxODY3NDE4MXwxNTgwMTE1ODI3MDAwfHdlYnA=/550x" class="cover-image" />
+      </div>
+      <img src="https://cdn.discordapp.com/attachments/1202997255133601842/1209543024640659506/iDMwzGgwlgAAAABJRU5ErkJggg.png?ex=65e74db9&is=65d4d8b9&hm=e4bfec2faa6a5abf2ba9b6cb510e143a6426208576f213c78520df4e372e4f54&" class="character" />
+      <div class="button-container">
+        <a href="https://www.wook.pt/livro/o-intruso-stephen-king/22799934" class="button file">Ler</a>
+        <a href="quizointruso.html" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/uma-aventura-no-porto-ana-maria-magalhaes/NDV8NTg1MTF8ODg1Nzh8MTY4NjE0ODI2NjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://cdn.discordapp.com/attachments/1204796454032384070/1209544580450619482/v9Wb19ug2b0PytXoAn8B7aerXLZl6IAAAAASUVORK5CYII.png?ex=65e74f2c&is=65d4da2c&hm=25959791801d0bf63c6f582de8f193f54bf4625b9cdc7242d809f2c850f17c3b&" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/uma-aventura-no-porto-ana-maria-magalhaes/58511" class="button file">Ler</a>
+        <a href="quizumaaventuranoporto.html" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-traficante-robert-muchamore/NDV8MTkwMTg2fDIxOTIzNTU1fDE2NDA4NTYwNTAwMDB8d2VicA==/300x" class="cover-image" />
+      </div>
+      <img src="https://img.wook.pt/images/o-traficante-robert-muchamore/MXwxOTAxODZ8MjE5MjM1NTV8MTY0MDg1NjA1MDAwMA==/500x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-traficante-robert-muchamore/190186" class="button file">Ler</a>
+        <a href="quizotraficante.html" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/uma-aventura-nas-ferias-de-natal-ana-maria-magalhaes/NDV8NTg1MDB8ODg1Njd8MTY4NjAzNzczOTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/uma-aventura-nas-ferias-de-natal-ana-maria-magalhaes/NDV8NTg1MDB8ODg1Njd8MTY4NjAzNzczOTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/uma-aventura-nas-ferias-de-natal-ana-maria-magalhaes/58500" class="button file">Ler</a>
+        <a href="quizumaaventuranasferiasdenatal.html" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-cavaleiro-da-dinamarca-sophia-de-mello-breyner-andresen/NDV8MTUyNzA5MDR8MjU4NTk1MDl8MTcwMTM0NjUxNzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.wook.pt/images/o-cavaleiro-da-dinamarca-sophia-de-mello-breyner-andresen/MXwxNTI3MDkwNHwyNTg1OTUwOXwxNzAxMzQ2NTE3MDAw/500x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-cavaleiro-da-dinamarca-sophia-de-mello-breyner-andresen/15270904" class="button file">Ler</a>
+        <a href="quizocavaleirodadinamarca.html " class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-bando-das-cavernas-n-40-nuno-caravela/NDV8MjgxNTU3MDN8MjQ1NDY5ODN8MTY3NjAyOTYzMDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-bando-das-cavernas-n-40-nuno-caravela/NDV8MjgxNTU3MDN8MjQ1NDY5ODN8MTY3NjAyOTYzMDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-bando-das-cavernas-n-40-nuno-caravela/28155703" class="button file">Ler</a>
+        <a href="quiznasceuumalenda.html" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+  
+  
+<script src="aventura.js"></script>
+
+</body>
+</html>

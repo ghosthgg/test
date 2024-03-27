@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Uma aventura no Porto</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+  
+        <h2 class="question q1">1. Quem são os principais personagens do livro "Uma Aventura no Porto"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q1" value="joão e pedro"> João e Pedro</li>
+          <li class="option"><input type="radio" name="q1" value="ana e joana"> Ana e Joana</li>
+          <li class="option"><input type="radio" name="q1" value="miguel e tiago"> Miguel e Tiago</li>
+          <li class="option"><input type="radio" name="q1" value="carla e sofia"> Carla e Sofia</li>
+        </ul>
+      
+        <h2 class="question q2">2. Qual é o enredo principal do livro?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q2" value="uma viagem ao espaço"> Uma viagem ao espaço</li>
+          <li class="option"><input type="radio" name="q2" value="uma aventura no mar"> Uma aventura no mar</li>
+          <li class="option"><input type="radio" name="q2" value="uma caça ao tesouro"> Uma caça ao tesouro</li>
+          <li class="option"><input type="radio" name="q2" value="uma missão de resgate"> Uma missão de resgate</li>
+        </ul>
+      
+        <h2 class="question q3">3. Quem é o autor do livro "Uma Aventura no Porto"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q3" value="luisa ducla soares"> Luísa Ducla Soares</li>
+          <li class="option"><input type="radio" name="q3" value="ana maria magalhães e isabel alçada"> Ana Maria Magalhães e Isabel Alçada</li>
+          <li class="option"><input type="radio" name="q3" value="sophia de mello breyner andresen"> Sophia de Mello Breyner Andresen</li>
+          <li class="option"><input type="radio" name="q3" value="alice vieira"> Alice Vieira</li>
+        </ul>
+      
+        <h2 class="question q4">4. Qual é o nome do local onde se passa a maior parte da história?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q4" value="uma ilha deserta"> Uma ilha deserta</li>
+          <li class="option"><input type="radio" name="q4" value="um castelo assombrado"> Um castelo assombrado</li>
+          <li class="option"><input type="radio" name="q4" value="uma caverna misteriosa"> Uma caverna misteriosa</li>
+          <li class="option"><input type="radio" name="q4" value="um navio pirata"> Um navio pirata</li>
+        </ul>
+      
+        <h2 class="question q5">5. Qual é o principal desafio enfrentado pelos personagens?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q5" value="encontrar um tesouro perdido"> Encontrar um tesouro perdido</li>
+          <li class="option"><input type="radio" name="q5" value="escapar de um naufrágio"> Escapar de um naufrágio</li>
+          <li class="option"><input type="radio" name="q5" value="desvendar um mistério histórico"> Desvendar um mistério histórico</li>
+          <li class="option"><input type="radio" name="q5" value="derrotar um vilão malvado"> Derrotar um vilão malvado</li>
+        </ul>
+      
+        <h2 class="question q6">6. Qual é a mensagem principal transmitida pelo livro?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q6" value="amizade"> Amizade</li>
+          <li class="option"><input type="radio" name="q6" value="coragem"> Coragem</li>
+          <li class="option"><input type="radio" name="q6" value="solidariedade"> Solidariedade</li>
+          <li class="option"><input type="radio" name="q6" value="perseverança"> Perseverança</li>
+        </ul>
+      
+        <h2 class="question q7">7. Qual é a idade aproximada recomendada para leitura do livro?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q7" value="6-8 anos"> 6-8 anos</li>
+          <li class="option"><input type="radio" name="q7" value="9-12 anos"> 9-12 anos</li>
+          <li class="option"><input type="radio" name="q7" value="13-15 anos"> 13-15 anos</li>
+          <li class="option"><input type="radio" name="q7" value="16-18 anos"> 16-18 anos</li>
+        </ul>
+      
+        <h2 class="question q8">8. Qual é o tema principal abordado no livro?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q8" value="aventura"> Aventura</li>
+          <li class="option"><input type="radio" name="q8" value="mistério"> Mistério</li>
+          <li class="option"><input type="radio" name="q8" value="fantasia"> Fantasia</li>
+          <li class="option"><input type="radio" name="q8" value="avaliação moral"> Avaliação moral</li>
+        </ul>
+      
+        <h2 class="question q9">9. Quais são as características principais dos personagens principais?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q9" value="inteligentes e astutos"> Inteligentes e astutos</li>
+          <li class="option"><input type="radio" name="q9" value="corajosos e altruístas"> Corajosos e altruístas</li>
+          <li class="option"><input type="radio" name="q9" value="divertidos e engraçados"> Divertidos e engraçados</li>
+          <li class="option"><input type="radio" name="q9" value="curiosos e aventureiros"> Curiosos e aventureiros</li>
+        </ul>
+      
+        <h2 class="question q10">10. Qual é o objetivo final dos personagens?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q10" value="salvar o mundo"> Salvar o mundo</li>
+          <li class="option"><input type="radio" name="q10" value="encontrar um tesouro perdido"> Encontrar um tesouro perdido</li>
+          <li class="option"><input type="radio" name="q10" value="descobrir um segredo antigo"> Descobrir um segredo antigo</li>
+          <li class="option"><input type="radio" name="q10" value="ajudar um amigo necessitado"> Ajudar um amigo necessitado</li>
+        </ul>
+      
+        <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+      </div>
+  
+
+
+      <script>
+        // Função para verificar as respostas e redirecionar para outra página
+        function checkAnswers() {
+          var correctCount = 0;
+          var incorrectCount = 0;
+      
+          // Verifica a resposta para a pergunta 1
+          var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+          if (respostaQ1 && respostaQ1.value === 'ana e joana') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 2
+          var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+          if (respostaQ2 && respostaQ2.value === 'uma aventura no mar') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 3
+          var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+          if (respostaQ3 && respostaQ3.value === 'luisa ducla soares') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 4
+          var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+          if (respostaQ4 && respostaQ4.value === 'um navio pirata') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 5
+          var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+          if (respostaQ5 && respostaQ5.value === 'encontrar um tesouro perdido') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 6
+          var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+          if (respostaQ6 && respostaQ6.value === 'solidariedade') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 7
+          var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+          if (respostaQ7 && respostaQ7.value === '9-12 anos') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 8
+          var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+          if (respostaQ8 && respostaQ8.value === 'aventura') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 9
+          var respostaQ9 = document.querySelector('input[name="q9"]:checked');
+          if (respostaQ9 && respostaQ9.value === 'curiosos e aventureiros') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Verifica a resposta para a pergunta 10
+          var respostaQ10 = document.querySelector('input[name="q10"]:checked');
+          if (respostaQ10 && respostaQ10.value === 'encontrar um tesouro perdido') {
+            correctCount++;
+          } else {
+            incorrectCount++;
+          }
+      
+          // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+          window.location.href = `resultadoUmaAventuraNoPorto.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+        }
+      </script>
+
+</body>
+</html>
