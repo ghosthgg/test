@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Uma aventura no Porto</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+  
+        <h2 class="question q1">1. Quais são os principais personagens do livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q1" value="João e Maria"> João e Maria</li>
+          <li class="option"><input type="radio" name="q1" value="Carlos e Ana"> Carlos e Ana</li>
+          <li class="option"><input type="radio" name="q1" value="Pedro e Sofia"> Pedro e Sofia</li>
+          <li class="option"><input type="radio" name="q1" value="Miguel e Raquel"> Miguel e Raquel</li>
+        </ul>
+      
+        <h2 class="question q2">2. Qual é o enredo principal do livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q2" value="Uma investigação policial"> Uma investigação policial</li>
+          <li class="option"><input type="radio" name="q2" value="Uma viagem ao redor do mundo"> Uma viagem ao redor do mundo</li>
+          <li class="option"><input type="radio" name="q2" value="Uma aventura na selva"> Uma aventura na selva</li>
+          <li class="option"><input type="radio" name="q2" value="Uma história de amor proibido"> Uma história de amor proibido</li>
+        </ul>
+      
+        <h2 class="question q3">3. Quem é o autor do livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q3" value="Luís Fernando Veríssimo"> Luís Fernando Veríssimo</li>
+          <li class="option"><input type="radio" name="q3" value="Paulo Coelho"> Paulo Coelho</li>
+          <li class="option"><input type="radio" name="q3" value="Fernando Sabino"> Fernando Sabino</li>
+          <li class="option"><input type="radio" name="q3" value="Luiz Ruffato"> Luiz Ruffato</li>
+        </ul>
+      
+        <h2 class="question q4">4. Qual é o nome do local onde se passa a maior parte da história em "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q4" value="Uma ilha deserta"> Uma ilha deserta</li>
+          <li class="option"><input type="radio" name="q4" value="Uma cidade grande"> Uma cidade grande</li>
+          <li class="option"><input type="radio" name="q4" value="Uma fazenda isolada"> Uma fazenda isolada</li>
+          <li class="option"><input type="radio" name="q4" value="Um país em guerra"> Um país em guerra</li>
+        </ul>
+      
+        <h2 class="question q5">5. Qual é o principal desafio enfrentado pelos personagens em "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q5" value="Capturar um criminoso fugitivo"> Capturar um criminoso fugitivo</li>
+          <li class="option"><input type="radio" name="q5" value="Encontrar um tesouro perdido"> Encontrar um tesouro perdido</li>
+          <li class="option"><input type="radio" name="q5" value="Impedir um desastre natural"> Impedir um desastre natural</li>
+          <li class="option"><input type="radio" name="q5" value="Resgatar reféns de sequestradores"> Resgatar reféns de sequestradores</li>
+        </ul>
+      
+        <h2 class="question q6">6. Qual é a mensagem principal transmitida pelo livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q6" value="Justiça prevalece no final"> Justiça prevalece no final</li>
+          <li class="option"><input type="radio" name="q6" value="O amor conquista tudo"> O amor conquista tudo</li>
+          <li class="option"><input type="radio" name="q6" value="A importância da amizade"> A importância da amizade</li>
+          <li class="option"><input type="radio" name="q6" value="As consequências da ganância"> As consequências da ganância</li>
+        </ul>
+      
+        <h2 class="question q7">7. Qual é a idade aproximada recomendada para leitura do livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q7" value="13-15 anos"> 13-15 anos</li>
+          <li class="option"><input type="radio" name="q7" value="16-18 anos"> 16-18 anos</li>
+          <li class="option"><input type="radio" name="q7" value="19-21 anos"> 19-21 anos</li>
+          <li class="option"><input type="radio" name="q7" value="22 anos ou mais"> 22 anos ou mais</li>
+        </ul>
+      
+        <h2 class="question q8">8. Qual é o tema principal abordado no livro "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q8" value="Crime e castigo"> Crime e castigo</li>
+          <li class="option"><input type="radio" name="q8" value="Exploração da natureza humana"> Exploração da natureza humana</li>
+          <li class="option"><input type="radio" name="q8" value="Luta pelo poder"> Luta pelo poder</li>
+          <li class="option"><input type="radio" name="q8" value="Redenção pessoal"> Redenção pessoal</li>
+        </ul>
+      
+        <h2 class="question q9">9. Quais são as características principais dos personagens principais em "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q9" value="Inteligentes e astutos"> Inteligentes e astutos</li>
+          <li class="option"><input type="radio" name="q9" value="Corajosos e altruístas"> Corajosos e altruístas</li>
+          <li class="option"><input type="radio" name="q9" value="Divertidos e engraçados"> Divertidos e engraçados</li>
+          <li class="option"><input type="radio" name="q9" value="Determinados e resilientes"> Determinados e resilientes</li>
+        </ul>
+      
+        <h2 class="question q10">10. Qual é o objetivo final dos personagens em "O Traficante"?</h2>
+        <ul class="options">
+          <li class="option"><input type="radio" name="q10" value="Desmantelar uma rede de tráfico de drogas"> Desmantelar uma rede de tráfico de drogas</li>
+          <li class="option"><input type="radio" name="q10" value="Conquistar uma fortuna em dinheiro"> Conquistar uma fortuna em dinheiro</li>
+          <li class="option"><input type="radio" name="q10" value="Encontrar um novo lar"> Encontrar um novo lar</li>
+          <li class="option"><input type="radio" name="q10" value="Vingar a morte de um ente querido"> Vingar a morte de um ente querido</li>
+        </ul>
+      
+        <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+      </div>
+      
+
+
+      <script>
+        // Função para verificar as respostas e redirecionar para outra página
+        function checkAnswers() {
+            var correctCount = 0;
+            var incorrectCount = 0;
+    
+            // Verifica a resposta para a pergunta 1
+            var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+            if (respostaQ1 && respostaQ1.value === 'João e Maria') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 2
+            var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+            if (respostaQ2 && respostaQ2.value === 'Uma investigação policial') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 3
+            var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+            if (respostaQ3 && respostaQ3.value === 'Luís Fernando Veríssimo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 4
+            var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+            if (respostaQ4 && respostaQ4.value === 'Uma cidade grande') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 5
+            var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+            if (respostaQ5 && respostaQ5.value === 'Capturar um criminoso fugitivo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 6
+            var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+            if (respostaQ6 && respostaQ6.value === 'As consequências da ganância') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 7
+            var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+            if (respostaQ7 && respostaQ7.value === '13-15 anos') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 8
+            var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+            if (respostaQ8 && respostaQ8.value === 'Crime e castigo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 9
+            var respostaQ9 = document.querySelector('input[name="q9"]:checked');
+            if (respostaQ9 && respostaQ9.value === 'Determinados e resilientes') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 10
+            var respostaQ10 = document.querySelector('input[name="q10"]:checked');
+            if (respostaQ10 && respostaQ10.value === 'Desmantelar uma rede de tráfico de drogas') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+            window.location.href = `resultadoOTraficante.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+        }
+    </script>
+    
+</body>
+</html>

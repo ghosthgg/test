@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - O Intruso</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div id="quiz-container">
+  
+  <h2 class="question q1">1. Quem é Terry Maitland?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q1" value="professor"> Professor de inglês</li>
+    <li class="option"><input type="radio" name="q1" value="médico"> Médico</li>
+    <li class="option"><input type="radio" name="q1" value="advogado"> Advogado</li>
+    <li class="option"><input type="radio" name="q1" value="policial"> Policial</li>
+  </ul>
+
+  <h2 class="question q2">2. Qual é o nome da cidade onde ocorrem os assassinatos?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q2" value="winden"> Winden</li>
+    <li class="option"><input type="radio" name="q2" value="hawkins"> Hawkins</li>
+    <li class="option"><input type="radio" name="q2" value="castle-rock"> Castle Rock</li>
+    <li class="option"><input type="radio" name="q2" value="derry"> Derry</li>
+  </ul>
+
+ 
+  <h2 class="question q3">3. Quem é o detetive que investiga os assassinatos?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q3" value="sherlock"> Sherlock Holmes</li>
+    <li class="option"><input type="radio" name="q3" value="harry"> Harry Potter</li>
+    <li class="option"><input type="radio" name="q3" value="hercule"> Hercule Poirot</li>
+    <li class="option"><input type="radio" name="q3" value="bill"> Bill Hodges</li>
+  </ul>
+  <h2 class="question q4">4. Qual é a arma do crime?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q4" value="faca"> Faca</li>
+    <li class="option"><input type="radio" name="q4" value="revolver"> Revólver</li>
+    <li class="option"><input type="radio" name="q4" value="corda"> Corda</li>
+    <li class="option"><input type="radio" name="q4" value="veneno"> Veneno</li>
+  </ul>
+
+  <h2 class="question q5">5. Qual é a profissão de Ralph Anderson?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q5" value="policial"> Policial</li>
+    <li class="option"><input type="radio" name="q5" value="advogado"> Advogado</li>
+    <li class="option"><input type="radio" name="q5" value="médico"> Médico</li>
+    <li class="option"><input type="radio" name="q5" value="professor"> Professor</li>
+  </ul>
+
+  <h2 class="question q6">6. Qual é o nome do assassino?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q6" value="teddy"> Teddy Daniels</li>
+    <li class="option"><input type="radio" name="q6" value="edward"> Edward Norton</li>
+    <li class="option"><input type="radio" name="q6" value="billy"> Billy Summers</li>
+    <li class="option"><input type="radio" name="q6" value="frank"> Frank Abagnale</li>
+  </ul>
+
+  <h2 class="question q7">7. Onde os corpos são encontrados?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q7" value="parque"> Parque</li>
+    <li class="option"><input type="radio" name="q7" value="praia"> Praia</li>
+    <li class="option"><input type="radio" name="q7" value="casa"> Casa abandonada</li>
+    <li class="option"><input type="radio" name="q7" value="bosque"> Bosque</li>
+  </ul>
+
+  <h2 class="question q8">8. Qual é a série baseada no livro?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q8" value="true-detective"> True Detective</li>
+    <li class="option"><input type="radio" name="q8" value="stranger-things"> Stranger Things</li>
+    <li class="option"><input type="radio" name="q8" value="castle-rock"> Castle Rock</li>
+    <li class="option"><input type="radio" name="q8" value="sharp-objects"> Sharp Objects</li>
+  </ul>
+
+  <h2 class="question q9">9. Qual é o nome do autor do livro?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q9" value="stephen-king"> Stephen King</li>
+    <li class="option"><input type="radio" name="q9" value="gillian-flynn"> Gillian Flynn</li>
+    <li class="option"><input type="radio" name="q9" value="don-winslow"> Don Winslow</li>
+    <li class="option"><input type="radio" name="q9" value="harlan-coben"> Harlan Coben</li>
+  </ul>
+
+  <h2 class="question q10">10. Quem interpreta o detetive Ralph Anderson na série de TV?</h2>
+  <ul class="options">
+    <li class="option"><input type="radio" name="q10" value="ben-affleck"> Ben Affleck</li>
+    <li class="option"><input type="radio" name="q10" value="jason-bateman"> Jason Bateman</li>
+    <li class="option"><input type="radio" name="q10" value="bill-hader"> Bill Hader</li>
+    <li class="option"><input type="radio" name="q10" value="ben-mendelsohn"> Ben Mendelsohn</li>
+  </ul>
+
+  
+
+ 
+  <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+</div>
+  
+
+
+<script>
+  // Função para verificar as respostas e redirecionar para outra página
+  function checkAnswers() {
+    var correctCount = 0;
+    var incorrectCount = 0;
+
+    // Verifica a resposta para a pergunta 1
+    var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+    if (respostaQ1 && respostaQ1.value === 'policial') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 2
+    var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+    if (respostaQ2 && respostaQ2.value === 'winden') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 3
+    var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+    if (respostaQ3 && respostaQ3.value === 'bill') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 4
+    var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+    if (respostaQ4 && respostaQ4.value === 'corda') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 5
+    var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+    if (respostaQ5 && respostaQ5.value === 'policial') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 6
+    var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+    if (respostaQ6 && respostaQ6.value === 'teddy') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 7
+    var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+    if (respostaQ7 && respostaQ7.value === 'parque') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 8
+    var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+    if (respostaQ8 && respostaQ8.value === 'true-detective') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 9
+    var respostaQ9 = document.querySelector('input[name="q9"]:checked');
+    if (respostaQ9 && respostaQ9.value === 'stephen-king') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Verifica a resposta para a pergunta 10
+    var respostaQ10 = document.querySelector('input[name="q10"]:checked');
+    if (respostaQ10 && respostaQ10.value === 'ben-mendelsohn') {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+    window.location.href = `resultadoOINTRUSO.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+  }
+</script>
+
+</body>
+</html>

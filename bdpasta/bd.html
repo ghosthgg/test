@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bd.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+   body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/minecraft-mundo-aberto-stephanie-ramirez/NDV8Mjk1OTg0NjF8MjYwMjU4NTV8MTcwNDg3NDY3NDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/minecraft-mundo-aberto-stephanie-ramirez/NDV8Mjk1OTg0NjF8MjYwMjU4NTV8MTcwNDg3NDY3NDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/minecraft-mundo-aberto-stephanie-ramirez/29598461" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/heartstopper-volume-5-alice-oseman/NDV8MjkwODMzNjB8MjU0Njg4MjB8MTY5ODMzOTI5NTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/heartstopper-volume-5-alice-oseman/NDV8MjkwODMzNjB8MjU0Njg4MjB8MTY5ODMzOTI5NTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/heartstopper-volume-5-alice-oseman/29083360" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-arvore-despida-keum-suk-gendry-kim/NDV8MjkzNzMwMjF8MjU3NzI0MjJ8MTY5NjQzMDc5OTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-arvore-despida-keum-suk-gendry-kim/NDV8MjkzNzMwMjF8MjU3NzI0MjJ8MTY5NjQzMDc5OTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-arvore-despida-keum-suk-gendry-kim/29373021" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/oito-horas-em-berlim-jose-louis-bocquet/NDV8Mjc4MzE3ODV8MjQyMDkzNjF8MTY2NjcwODc2ODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/oito-horas-em-berlim-jose-louis-bocquet/NDV8Mjc4MzE3ODV8MjQyMDkzNjF8MTY2NjcwODc2ODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/oito-horas-em-berlim-jose-louis-bocquet/27831785" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/asterix-o-papiro-de-cesar-jean-yves-ferri/NDV8MTY4MDc4ODl8MTI0MjU5NzF8MTQ0NDY3MDk2NDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/asterix-o-papiro-de-cesar-jean-yves-ferri/NDV8MTY4MDc4ODl8MTI0MjU5NzF8MTQ0NDY3MDk2NDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/asterix-o-papiro-de-cesar-jean-yves-ferri/16807889" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-bomba-parte-i-didier-alcante/NDV8MjcwOTQ2MTd8MjM0MDI2OTF8MTY1NDA5NzY4ODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-bomba-parte-i-didier-alcante/NDV8MjcwOTQ2MTd8MjM0MDI2OTF8MTY1NDA5NzY4ODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-bomba-parte-i-didier-alcante/27094617" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-ultimo-espadao-jean-van-hamme/NDV8MjU1MzQ3MjJ8MjE3ODQ0NTV8MTYzNTMzMjMxOTAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-ultimo-espadao-jean-van-hamme/NDV8MjU1MzQ3MjJ8MjE3ODQ0NTV8MTYzNTMzMjMxOTAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-ultimo-espadao-jean-van-hamme/25534722" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/tintin-no-pais-dos-sovietes-herge/NDV8OTU5NjI2M3w1MTg0NDAyfDEzODM1NzY1OTkwMDB8d2VicA==/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/tintin-no-pais-dos-sovietes-herge/NDV8OTU5NjI2M3w1MTg0NDAyfDEzODM1NzY1OTkwMDB8d2VicA==/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/tintin-no-pais-dos-sovietes-herge/9596263" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+  
+  
+<script src="bd.js"></script>
+
+</body>
+</html>

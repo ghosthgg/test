@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Uma aventura no Porto</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+        <h2 class="question q1">1. Qual é o nome do líder do Bando das Cavernas?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q1" value="Touro Bravo">Touro Bravo</li>
+            <li class="option"><input type="radio" name="q1" value="Pedra Líder">Pedra Líder</li>
+            <li class="option"><input type="radio" name="q1" value="Urso Selvagem">Urso Selvagem</li>
+            <li class="option"><input type="radio" name="q1" value="Trovoada Veloz">Trovoada Veloz</li>
+        </ul>
+    
+        <!-- Pergunta 2 -->
+        <h2 class="question q2">2. Qual é o nome da caverna onde o bando vive?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q2" value="Caverna do Trovão">Caverna do Trovão</li>
+            <li class="option"><input type="radio" name="q2" value="Caverna da Pedra">Caverna da Pedra</li>
+            <li class="option"><input type="radio" name="q2" value="Caverna da Floresta">Caverna da Floresta</li>
+            <li class="option"><input type="radio" name="q2" value="Caverna dos Ursos">Caverna dos Ursos</li>
+        </ul>
+    
+        <!-- Pergunta 3 -->
+        <h2 class="question q3">3. Quem é o autor do livro "Bando das Cavernas: Nasceu uma Lenda"?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q3" value="Nelson Mandela">Nelson Mandela</li>
+            <li class="option"><input type="radio" name="q3" value="J.K. Rowling">J.K. Rowling</li>
+            <li class="option"><input type="radio" name="q3" value="Marcelo Duarte">Marcelo Duarte</li>
+            <li class="option"><input type="radio" name="q3" value="Luciana Sandroni">Luciana Sandroni</li>
+        </ul>
+    
+        <!-- Pergunta 4 -->
+        <h2 class="question q4">4. Qual é o grande desafio enfrentado pelo Bando das Cavernas?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q4" value="Caçar o mamute das neves">Caçar o mamute das neves</li>
+            <li class="option"><input type="radio" name="q4" value="Defender a caverna dos invasores">Defender a caverna dos invasores</li>
+            <li class="option"><input type="radio" name="q4" value="Domar os dinossauros selvagens">Domar os dinossauros selvagens</li>
+            <li class="option"><input type="radio" name="q4" value="Encontrar a fonte da juventude">Encontrar a fonte da juventude</li>
+        </ul>
+    
+        <!-- Pergunta 5 -->
+        <h2 class="question q5">5. Qual é a mensagem principal transmitida pelo livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q5" value="A importância da amizade e da colaboração">A importância da amizade e da colaboração</li>
+            <li class="option"><input type="radio" name="q5" value="A busca pelo poder e pela dominação">A busca pelo poder e pela dominação</li>
+            <li class="option"><input type="radio" name="q5" value="A aventura em busca de tesouros escondidos">A aventura em busca de tesouros escondidos</li>
+            <li class="option"><input type="radio" name="q5" value="O confronto entre o bem e o mal">O confronto entre o bem e o mal</li>
+        </ul>
+    
+        <!-- Pergunta 6 -->
+        <h2 class="question q6">6. Qual é o tema central explorado na história?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q6" value="A vida pré-histórica e a sobrevivência">A vida pré-histórica e a sobrevivência</li>
+            <li class="option"><input type="radio" name="q6" value="A magia e os mistérios das cavernas">A magia e os mistérios das cavernas</li>
+            <li class="option"><input type="radio" name="q6" value="As viagens no tempo e os portais mágicos">As viagens no tempo e os portais mágicos</li>
+            <li class="option"><input type="radio" name="q6" value="As lendas e mitos dos povos antigos">As lendas e mitos dos povos antigos</li>
+        </ul>
+    
+        <!-- Pergunta 7 -->
+        <h2 class="question q7">7. Qual é a idade recomendada para leitura deste livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q7" value="6-8 anos">6-8 anos</li>
+            <li class="option"><input type="radio" name="q7" value="9-12 anos">9-12 anos</li>
+            <li class="option"><input type="radio" name="q7" value="13-15 anos">13-15 anos</li>
+            <li class="option"><input type="radio" name="q7" value="16-18 anos">16-18 anos</li>
+        </ul>
+    
+        <!-- Pergunta 8 -->
+        <h2 class="question q8">8. Qual é a principal lição aprendida pelo Bando das Cavernas?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q8" value="A importância da união e da confiança">A importância da união e da confiança</li>
+            <li class="option"><input type="radio" name="q8" value="A busca pelo conhecimento e pela sabedoria">A busca pelo conhecimento e pela sabedoria</li>
+            <li class="option"><input type="radio" name="q8" value="A coragem diante dos desafios e perigos">A coragem diante dos desafios e perigos</li>
+            <li class="option"><input type="radio" name="q8" value="A aventura em terras desconhecidas">A aventura em terras desconhecidas</li>
+        </ul>
+    
+        <!-- Pergunta 9 -->
+        <h2 class="question q9">9. Qual é o nome do animal de estimação do Bando das Cavernas?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q9" value="Tigre Feroz">Tigre Feroz</li>
+            <li class="option"><input type="radio" name="q9" value="Urso Amigo">Urso Amigo</li>
+            <li class="option"><input type="radio" name="q9" value="Leão Selvagem">Leão Selvagem</li>
+            <li class="option"><input type="radio" name="q9" value="Javali Valente">Javali Valente</li>
+        </ul>
+    
+        <!-- Pergunta 10 -->
+        <h2 class="question q10">10. Qual é o grande feito alcançado pelo Bando das Cavernas no final da história?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q10" value="Descobrir a origem dos mistérios das cavernas">Descobrir a origem dos mistérios das cavernas</li>
+            <li class="option"><input type="radio" name="q10" value="Salvar sua caverna da destruição iminente">Salvar sua caverna da destruição iminente</li>
+            <li class="option"><input type="radio" name="q10" value="Derrotar o terrível dragão das trevas">Derrotar o terrível dragão das trevas</li>
+            <li class="option"><input type="radio" name="q10" value="Construir uma nova civilização nas cavernas">Construir uma nova civilização nas cavernas</li>
+        </ul>
+    
+        <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+    </div>
+    
+    
+      
+
+
+    <script>
+        // Função para verificar as respostas e redirecionar para outra página
+        function checkAnswers() {
+            var correctCount = 0;
+            var incorrectCount = 0;
+    
+            // Verifica a resposta para a pergunta 1
+            var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+            if (respostaQ1 && respostaQ1.value === 'Touro Bravo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 2
+            var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+            if (respostaQ2 && respostaQ2.value === 'Caverna do Trovão') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 3
+            var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+            if (respostaQ3 && respostaQ3.value === 'Luciana Sandroni') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 4
+            var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+            if (respostaQ4 && respostaQ4.value === 'Defender a caverna dos invasores') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 5
+            var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+            if (respostaQ5 && respostaQ5.value === 'A importância da amizade e da colaboração') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 6
+            var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+            if (respostaQ6 && respostaQ6.value === 'A vida pré-histórica e a sobrevivência') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 7
+            var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+            if (respostaQ7 && respostaQ7.value === '9-12 anos') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 8
+            var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+            if (respostaQ8 && respostaQ8.value === 'A importância da união e da confiança') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 9
+            var respostaQ9 = document.querySelector('input[name="q9"]:checked');
+            if (respostaQ9 && respostaQ9.value === 'Javali Valente') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 10
+            var respostaQ10 = document.querySelector('input[name="q10"]:checked');
+            if (respostaQ10 && respostaQ10.value === 'Salvar sua caverna da destruição iminente') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+            window.location.href = `resultadoNasceuumalenda.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+        }
+    </script>
+    
+    
+    
+    
+</body>
+</html>

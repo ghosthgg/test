@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fantasia.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-principe-cruel-holly-black/NDV8MjM4OTQ4NDF8MTk5MTc4NzN8MTcwMDQ2ODM0ODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-principe-cruel-holly-black/NDV8MjM4OTQ4NDF8MTk5MTc4NzN8MTcwMDQ2ODM0ODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-principe-cruel-holly-black/23894841" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/corte-de-nevoa-e-furia-sarah-j-maas/NDV8MjcxODE5MjB8MjM1MDY2NDh8MTY1NjUwMDc0NzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/corte-de-nevoa-e-furia-sarah-j-maas/NDV8MjcxODE5MjB8MjM1MDY2NDh8MTY1NjUwMDc0NzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/corte-de-nevoa-e-furia-sarah-j-maas/27181920" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/corte-de-espinhos-e-rosas-sarah-j-maas/NDV8MjU4MzgyMzd8MjIxMDE5MjR8MTY0MTg5ODkwMDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/corte-de-espinhos-e-rosas-sarah-j-maas/NDV8MjU4MzgyMzd8MjIxMDE5MjR8MTY0MTg5ODkwMDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/quarta-asa-rebecca-yarros/29372499" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/corte-de-asas-e-ruina-sarah-j-maas/NDV8MjgwNjQ0NzF8MjQ0NjU5Njd8MTY3MzQ0NDk0NzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/corte-de-asas-e-ruina-sarah-j-maas/NDV8MjgwNjQ0NzF8MjQ0NjU5Njd8MTY3MzQ0NDk0NzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/corte-de-asas-e-ruina-sarah-j-maas/28064471" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/quarta-asa-rebecca-yarros/NDV8MjkzNzI0OTl8MjU3NzE3NDF8MTY5NjQxMTMwMDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/quarta-asa-rebecca-yarros/NDV8MjkzNzI0OTl8MjU3NzE3NDF8MTY5NjQxMTMwMDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/quarta-asa-rebecca-yarros/29372499" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-hobbit-j-r-r-tolkien/NDV8MjcyNTM0Nzl8MjM1ODkzODF8MTY1ODkxMzI4MjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-hobbit-j-r-r-tolkien/NDV8MjcyNTM0Nzl8MjM1ODkzODF8MTY1ODkxMzI4MjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-hobbit-j-r-r-tolkien/27253479" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+</header>
+  
+  
+
+<script src="fantasia.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="arte.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/hip-hop-tuga-ricardo-farinha/NDV8MjkzNTk4NjB8MjU3NTc4ODV8MTcxMDc0ODg3NjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/hip-hop-tuga-ricardo-farinha/NDV8MjkzNTk4NjB8MjU3NTc4ODV8MTcxMDc0ODg3NjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/hip-hop-tuga-ricardo-farinha/29359860" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-lixo-na-minha-cabeca-hugo-van-der-ding/NDV8MjcyMzQzNDZ8MjM1Njc1MTd8MTY1ODQxOTE0NDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-lixo-na-minha-cabeca-hugo-van-der-ding/NDV8MjcyMzQzNDZ8MjM1Njc1MTd8MTY1ODQxOTE0NDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/uma-aventura-no-porto-ana-maria-magalhaes/58511" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/da-weasel-uma-pagina-da-historia-da-weasel/NDV8Mjg1MzMzMjN8MjQ5MTA5NzR8MTY4MzEwNjE3NDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/da-weasel-uma-pagina-da-historia-da-weasel/NDV8Mjg1MzMzMjN8MjQ5MTA5NzR8MTY4MzEwNjE3NDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/da-weasel-uma-pagina-da-historia-da-weasel/28533323" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/teoria-do-jazz-cesar-cardoso/NDV8MTg4OTE5OTh8MTQ2MjA0NTh8MTQ3NjY5NTI3NzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/teoria-do-jazz-cesar-cardoso/NDV8MTg4OTE5OTh8MTQ2MjA0NTh8MTQ3NjY5NTI3NzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/teoria-do-jazz-cesar-cardoso/18891998" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/25-de-abril-de-1974-quinta-feira-alfredo-cunha/NDV8Mjk0NDg5ODJ8MjU4NTY4NDR8MTY5ODk0MjcxODAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/25-de-abril-de-1974-quinta-feira-alfredo-cunha/NDV8Mjk0NDg5ODJ8MjU4NTY4NDR8MTY5ODk0MjcxODAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/25-de-abril-de-1974-quinta-feira-alfredo-cunha/29448982" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/1000-anos-de-alegrias-e-tristezas-ai-weiwei/NDV8MjUxMTc1NTl8MjEzMTI0MjV8MTYyNTE0NzM0NzAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/1000-anos-de-alegrias-e-tristezas-ai-weiwei/NDV8MjUxMTc1NTl8MjEzMTI0MjV8MTYyNTE0NzM0NzAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/1000-anos-de-alegrias-e-tristezas-ai-weiwei/25117559" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+  
+  
+<script src="arte.js"></script>
+
+</body>
+</html>

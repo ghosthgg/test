@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Uma aventura no Porto</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+        <h2 class="question q1">1. Qual é o nome do cavaleiro protagonista do livro "O Cavaleiro da Dinamarca"?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q1" value="Gustavo">Gustavo</li>
+            <li class="option"><input type="radio" name="q1" value="Frederico">Frederico</li>
+            <li class="option"><input type="radio" name="q1" value="André">André</li>
+            <li class="option"><input type="radio" name="q1" value="Fernando">Fernando</li>
+        </ul>
+    
+        <!-- Pergunta 2 -->
+        <h2 class="question q2">2. Qual é o reino onde se passa a história?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q2" value="Reino da Dinamarca">Reino da Dinamarca</li>
+            <li class="option"><input type="radio" name="q2" value="Reino da Suécia">Reino da Suécia</li>
+            <li class="option"><input type="radio" name="q2" value="Reino da Noruega">Reino da Noruega</li>
+            <li class="option"><input type="radio" name="q2" value="Reino da Finlândia">Reino da Finlândia</li>
+        </ul>
+    
+        <!-- Pergunta 3 -->
+        <h2 class="question q3">3. Quem é o autor do livro "O Cavaleiro da Dinamarca"?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q3" value="Sophia de Mello Breyner Andresen">Sophia de Mello Breyner Andresen</li>
+            <li class="option"><input type="radio" name="q3" value="Eça de Queirós">Eça de Queirós</li>
+            <li class="option"><input type="radio" name="q3" value="Luisa Ducla Soares">Luisa Ducla Soares</li>
+            <li class="option"><input type="radio" name="q3" value="Miguel Torga">Miguel Torga</li>
+        </ul>
+    
+        <!-- Pergunta 4 -->
+        <h2 class="question q4">4. Qual é a jornada do cavaleiro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q4" value="Encontrar o Santo Graal">Encontrar o Santo Graal</li>
+            <li class="option"><input type="radio" name="q4" value="Resgatar a princesa do castelo">Resgatar a princesa do castelo</li>
+            <li class="option"><input type="radio" name="q4" value="Vencer o dragão que aterroriza o reino">Vencer o dragão que aterroriza o reino</li>
+            <li class="option"><input type="radio" name="q4" value="Buscar a lendária espada Excalibur">Buscar a lendária espada Excalibur</li>
+        </ul>
+    
+        <!-- Pergunta 5 -->
+        <h2 class="question q5">5. Qual é o tema central explorado no livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q5" value="Coragem e heroísmo">Coragem e heroísmo</li>
+            <li class="option"><input type="radio" name="q5" value="Romance e paixão">Romance e paixão</li>
+            <li class="option"><input type="radio" name="q5" value="Vingança e poder">Vingança e poder</li>
+            <li class="option"><input type="radio" name="q5" value="Mistério e suspense">Mistério e suspense</li>
+        </ul>
+    
+        <!-- Pergunta 6 -->
+        <h2 class="question q6">6. Qual é a idade recomendada para leitura deste livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q6" value="10-12 anos">10-12 anos</li>
+            <li class="option"><input type="radio" name="q6" value="13-15 anos">13-15 anos</li>
+            <li class="option"><input type="radio" name="q6" value="16-18 anos">16-18 anos</li>
+            <li class="option"><input type="radio" name="q6" value="Adultos">Adultos</li>
+        </ul>
+    
+        <!-- Pergunta 7 -->
+        <h2 class="question q7">7. Qual é a principal mensagem transmitida pelo livro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q7" value="A importância da perseverança e da determinação">A importância da perseverança e da determinação</li>
+            <li class="option"><input type="radio" name="q7" value="O valor da amizade e da lealdade">O valor da amizade e da lealdade</li>
+            <li class="option"><input type="radio" name="q7" value="A necessidade de buscar a vingança a qualquer custo">A necessidade de buscar a vingança a qualquer custo</li>
+            <li class="option"><input type="radio" name="q7" value="A fragilidade do poder e a efemeridade da glória">A fragilidade do poder e a efemeridade da glória</li>
+        </ul>
+    
+        <!-- Pergunta 8 -->
+        <h2 class="question q8">8. Qual é o desafio final enfrentado pelo cavaleiro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q8" value="Derrotar o feiticeiro maligno">Derrotar o feiticeiro maligno</li>
+            <li class="option"><input type="radio" name="q8" value="Encontrar o elixir da vida eterna">Encontrar o elixir da vida eterna</li>
+            <li class="option"><input type="radio" name="q8" value="Resgatar a rainha raptada pelo vilão">Resgatar a rainha raptada pelo vilão</li>
+            <li class="option"><input type="radio" name="q8" value="Recuperar a espada mágica perdida">Recuperar a espada mágica perdida</li>
+        </ul>
+    
+        <!-- Pergunta 9 -->
+        <h2 class="question q9">9. Qual é o animal de estimação do cavaleiro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q9" value="Cavalo">Cavalo</li>
+            <li class="option"><input type="radio" name="q9" value="Falcão">Falcão</li>
+            <li class="option"><input type="radio" name="q9" value="Lobo">Lobo</li>
+            <li class="option"><input type="radio" name="q9" value="Gato">Gato</li>
+        </ul>
+    
+        <!-- Pergunta 10 -->
+        <h2 class="question q10">10. Qual é o destino final do cavaleiro?</h2>
+        <ul class="options">
+            <li class="option"><input type="radio" name="q10" value="Tornar-se o novo rei do reino">Tornar-se o novo rei do reino</li>
+            <li class="option"><input type="radio" name="q10" value="Retirar-se para uma vida de paz e tranquilidade">Retirar-se para uma vida de paz e tranquilidade</li>
+            <li class="option"><input type="radio" name="q10" value="Partir em uma nova aventura em terras distantes">Partir em uma nova aventura em terras distantes</li>
+            <li class="option"><input type="radio" name="q10" value="Viver feliz para sempre ao lado de sua amada">Viver feliz para sempre ao lado de sua amada</li>
+        </ul>
+    
+        <button onclick="checkAnswers()" class="button">Verificar Respostas</button>
+    </div>
+    
+      
+
+
+    <script>
+        // Função para verificar as respostas e redirecionar para outra página
+        function checkAnswers() {
+            var correctCount = 0;
+            var incorrectCount = 0;
+    
+            // Verifica a resposta para a pergunta 1
+            var respostaQ1 = document.querySelector('input[name="q1"]:checked');
+            if (respostaQ1 && respostaQ1.value === 'Gustavo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 2
+            var respostaQ2 = document.querySelector('input[name="q2"]:checked');
+            if (respostaQ2 && respostaQ2.value === 'Reino da Dinamarca') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 3
+            var respostaQ3 = document.querySelector('input[name="q3"]:checked');
+            if (respostaQ3 && respostaQ3.value === 'Sophia de Mello Breyner Andresen') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 4
+            var respostaQ4 = document.querySelector('input[name="q4"]:checked');
+            if (respostaQ4 && respostaQ4.value === 'Buscar a lendária espada Excalibur') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 5
+            var respostaQ5 = document.querySelector('input[name="q5"]:checked');
+            if (respostaQ5 && respostaQ5.value === 'Coragem e heroísmo') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 6
+            var respostaQ6 = document.querySelector('input[name="q6"]:checked');
+            if (respostaQ6 && respostaQ6.value === '10-12 anos') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 7
+            var respostaQ7 = document.querySelector('input[name="q7"]:checked');
+            if (respostaQ7 && respostaQ7.value === 'A importância da perseverança e da determinação') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 8
+            var respostaQ8 = document.querySelector('input[name="q8"]:checked');
+            if (respostaQ8 && respostaQ8.value === 'Recuperar a espada mágica perdida') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 9
+            var respostaQ9 = document.querySelector('input[name="q9"]:checked');
+            if (respostaQ9 && respostaQ9.value === 'Falcão') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Verifica a resposta para a pergunta 10
+            var respostaQ10 = document.querySelector('input[name="q10"]:checked');
+            if (respostaQ10 && respostaQ10.value === 'Viver feliz para sempre ao lado de sua amada') {
+                correctCount++;
+            } else {
+                incorrectCount++;
+            }
+    
+            // Redireciona para a página de resultados com os contadores de respostas corretas e incorretas
+            window.location.href = `resultadoOCavaleirodadinamarca.html?correct=${correctCount}&incorrect=${incorrectCount}`;
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
