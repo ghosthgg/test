@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="informatica.css">
+  <title>Escolha o seu Livro!</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgb(70, 65, 65);
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(4 , minmax(200px, 1fr)); /* Duas colunas de largura automática */
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title,
+    .character {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .button-container {
+      margin-top: auto;
+      display: none; /* Botões ocultos por padrão */
+    }
+
+    .card:hover .button-container {
+      display: flex; /* Mostrar botões quando o mouse passar por cima */
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.file {
+      background-color: #007BFF;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/o-que-faz-o-chatgpt-e-como-funciona-stephen-wolfram/NDV8MjkyMTAxODF8MjU1OTY1MjV8MTY5MDg4MjQyNjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/o-que-faz-o-chatgpt-e-como-funciona-stephen-wolfram/NDV8MjkyMTAxODF8MjU1OTY1MjV8MTY5MDg4MjQyNjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/o-que-faz-o-chatgpt-e-como-funciona-stephen-wolfram/29210181" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/tecnologia-blockchain-e-criptomoedas-luis-antunes/NDV8MjM2MjQxMTR8MTk2MDEwMzl8MTU3NDE1OTQyNjAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/tecnologia-blockchain-e-criptomoedas-luis-antunes/NDV8MjM2MjQxMTR8MTk2MDEwMzl8MTU3NDE1OTQyNjAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/tecnologia-blockchain-e-criptomoedas-luis-antunes/23624114" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/a-revolucao-do-algoritmo-mestre-pedro-domingos/NDV8Mjk1ODE5NzJ8MjYwMDcxNDh8MTcwMzg1MTE0MDAwMHx3ZWJw/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/a-revolucao-do-algoritmo-mestre-pedro-domingos/NDV8Mjk1ODE5NzJ8MjYwMDcxNDh8MTcwMzg1MTE0MDAwMHx3ZWJw/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/a-revolucao-do-algoritmo-mestre-pedro-domingos/29581972" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/fotografia-digital-tecnicas-com-photoshop-magno-urbano/NDV8MTEyNTc2ODl8NjgyODY5MXwxMzgzNTgxNTAxMDAwfHdlYnA=/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/fotografia-digital-tecnicas-com-photoshop-magno-urbano/NDV8MTEyNTc2ODl8NjgyODY5MXwxMzgzNTgxNTAxMDAwfHdlYnA=/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/fotografia-digital-tecnicas-com-photoshop-magno-urbano/11257689" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="book-link">
+    <div class="card">
+      <div class="wrapper">
+        <img src="https://img.bertrand.pt/images/adobe-indesign-cs4/NDV8MTAzMTI5Mjd8NTkwMTQ1MHwxNDM3NjQzNjc1MDAwfHdlYnA=/300x" class="cover-image" />
+      </div>
+      <img src="https://img.bertrand.pt/images/adobe-indesign-cs4/NDV8MTAzMTI5Mjd8NTkwMTQ1MHwxNDM3NjQzNjc1MDAwfHdlYnA=/300x" class="character" />
+      <div class="button-container">
+        <a href="https://www.bertrand.pt/livro/adobe-indesign-cs4/10312927" class="button file">Ler</a>
+        <a href="" class="button file">Quiz</a>
+        
+      </div>
+    </div>
+  </div>
+  
+ 
+
+
+</header>
+  
+<script src="informatica.js"></script>
+
+
+</body>
+</html>
